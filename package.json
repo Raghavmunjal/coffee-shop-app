@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "ipod": "cd ios && pod install && cd .."
+    "ipod": "cd ios && pod install && cd ..",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@react-native-community/blur": "^4.3.2",

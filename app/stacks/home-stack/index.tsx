@@ -7,17 +7,16 @@ import BottomStack from '../tab-stack';
 const Stack = createNativeStackNavigator();
 
 const HomeStack = () => {
-    return (
+  return (
     <Stack.Navigator
-        screenOptions={{
-            headerShown: false,
-        }}
-        >
-            <Stack.Screen name="Tab" component={BottomStack}/>
-            <Stack.Screen name="Payment" component={PaymentScreen} />
-            <Stack.Screen name="Details" component={DetailScreen} />
+      screenOptions={{
+        headerShown: false,
+      }}>
+      <Stack.Screen name="Tab" component={BottomStack} />
+      <Stack.Screen name="Payment" component={PaymentScreen} />
+      <Stack.Screen name="Details" component={DetailScreen} />
     </Stack.Navigator>
-    );
+  );
 };
 
 export default HomeStack;
